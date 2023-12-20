@@ -1,29 +1,29 @@
-#concept of a stack overflow and its exploitation process using a simple analogy:
+# concept of a stack overflow and its exploitation process using a simple analogy:
 
-## 1. Step-by-Step Walkthrough:
-### a. Building a Stack:
+## Step-by-Step Walkthrough:
+### Building a Stack:
 
 Picture a stack like a pile of plates in a cafeteria. Each plate represents a task or function that the computer is handling.
-### b. Function Calls:
+### Function Calls:
 
 When a function is called, a plate is added to the stack. The computer keeps track of where it should go back to after finishing each task.
-### c. Limited Space:
+### Limited Space:
 
 Just like there's limited space on the plate rack, the computer's stack has a limited capacity. It can only handle a certain number of function calls at once.
-### d. Overflowing the Stack:
+### Overflowing the Stack:
 
 Now, imagine someone keeps adding plates without considering the limited space. Eventually, the plates start falling off the rack – this is the "stack overflow."
-### e. Changing the Order:
+### Changing the Order:
 
 When the plates fall, they disrupt the order. Similarly, in a computer, overflowing the stack can disrupt the program's normal flow.
-### f. Redirecting Execution:
+### Redirecting Execution:
 
 The fallen plates can be strategically placed to change the order of tasks. In a computer, this is like changing the normal flow of the program.
-### g. Executing Malicious Code:
+### Executing Malicious Code:
 
 If the fallen plates (altered program flow) contain specific instructions, it's like the computer following a different set of tasks – potentially running malicious code.
-## 2. Exploitation Techniques:
-### a. Injecting Malicious Code:
+## Exploitation Techniques:
+### Injecting Malicious Code:
 
 An attacker might overflow the stack with more data than it can handle. If this data includes carefully crafted instructions (malicious code), the program might execute those instructions.
 ### b. Altering Function Pointers:
